@@ -1,32 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>RGB Color Guessing Game</title>
-	<link rel="stylesheet" href="assets/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
 </head>
-	<body>
 
-		<h1>RGB Color Game</h1>
-		<p>Choose the correct color that matches</p>
-		<p><span id="colorDisplay">rgb</span></p>
+<body>
 
-		<div id="messagestripe">
-			<button id="reset">New Colors</button>
-			<span id="message"></span>
-			<button class="mode">Easy</button>
-			<button class="mode selected">Hard</button>
-		</div>
 
-		<div id="container">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo`">YB</a>
+            </div>
 
-		<script type="text/javascript" src="assets/custom.js"></script>
-	</body>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sandeep Yadav</span><br>Programmer</h1>
+            </div>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/sandeep-yadav-2449381a0/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Samrat101" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/sandeep2.png" ">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about ">
+            <h2 class="section-title ">About</h2>
+
+            <div class="about__container bd-grid ">
+                <div class="about__img ">
+                    <img src="assets/img/Meri PHO2.jpg " alt=" ">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle ">I'am Sandeep Yadav</h2>
+                    <p class="about__text ">Student of Btech Computer Science Engineering(7th sem.) at Delhi Technological University(formerly DCE).Skilled in Data Structures and Algorithms. Familiar with Web Development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section " id="skills ">
+            <h2 class="section-title ">Skills</h2>
+
+            <div class="skills__container bd-grid ">
+                <div>
+                    <h2 class="skills__subtitle ">Profesional Skills</h2>
+                    <p class="skills__text "></p>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+                            <span class="skills__name ">C++</span>
+                        </div>
+                        <div class="skills__bar skills__Cpp ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+                            <span class="skills__name ">Data Structures & Algorithms</span>
+                        </div>
+                        <div class="skills__bar skills__DS ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+
+                            <span class="skills__name ">Frontend(Html CSS Bootstrap Javascript)</span>
+                        </div>
+                        <div class="skills__bar skills__Front ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data ">
+                        <div class="skills__names ">
+
+                            <span class="skills__name ">Android DevelopmentI</span>
+                        </div>
+                        <div class="skills__bar skills__Android ">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage ">60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg " alt=" " class="skills__img ">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section " id="work ">
+            <h2 class="section-title ">Work Experience</h2>
+
+            <div class="work__container bd-grid ">
+                <div>
+                    <h2 class="about__subtitle ">UnderGrad. Researcher at Samsung Lab</h2>
+                    <p class="about__text ">• Included extensive literature review, to understand past benchmark schemes and propose design and implementation of the algorithm for ECC-based attribute-based cryptography</p>
+                    <p class="about__text ">• Currently working on revocation</p>
+                </div>
+                <div>
+                    <h2 class="about__subtitle ">Teaching Assistant at Pep Coding</h2>
+                    <p class="about__text ">• Teaching Assistant for the course Data Structure and algorithms in C++.</p>
+                    <p class="about__text ">• Helped students by clearing their doubts, tried improving their question solving ability by providing new and novel problems to them.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section " id="contact ">
+            <h2 class="section-title ">Contact</h2>
+
+            <div class="contact__container bd-grid ">
+                <form action=" " class="contact__form ">
+                    <input type="text " placeholder="Name " class="contact__input ">
+                    <input type="mail " placeholder="Email " class="contact__input ">
+                    <textarea name=" " id=" " cols="0 " rows="10 " placeholder="Enter your text here " class="contact__input "></textarea>
+                    <input type="button " value="Enter " class="contact__button button ">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer ">
+        <p class="footer__title ">Sandeep Yadav</p>
+        <div class="footer__social ">
+            <a href="https://www.facebook.com/ " class="footer__icon "><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/ " class="footer__icon "><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal "></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js "></script>
+</body>
+
 </html>
